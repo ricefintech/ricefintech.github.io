@@ -1,0 +1,369 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+#homeGrid {
+  margin-top: 3rem;
+  max-width: 850;
+  padding-top: '2em';
+  width: 100%;
+}
+
+canvas {
+  min-height: 70%;
+}
+
+.wrapper {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  line-height: 100vh;
+  text-align: center;
+}
+
+#header {
+  font-family: Merriweather;
+  font-weight: 600;
+  font-size: 2.6em;
+  margin-bottom: 1em;
+}
+
+#intro {
+  font-family: Titillium Web;
+  font-size: 2.4em;
+  line-height: 1.6em;
+}
+
+#intro-sm {
+  font-family: Titillium Web;
+  font-size: 2em;
+  line-height: 1.6em;
+}
+
+#coming-soon {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
+}
+
+#divider {
+  display: block;
+  margin-top: 4em;
+  margin-bottom: 4em;
+}
+
+#divider-short {
+  display: block;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+#heroDivider {
+  display: block;
+  margin-top: 6em;
+  margin-bottom: 6em;
+}
+
+#rowDivider {
+  display: block;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+#actions {
+  margin-bottom: 4em;
+}
+
+#apply, #contact {
+  font-family: Titillium Web;
+  font-weight: 600;
+  font-size: 2em;
+  padding: 0.8em 1.2em 0.8em 1.2em;
+  text-transform: uppercase;
+  background: #fff;
+  color: #1D2858;
+  border-radius: 0px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#textCenter {
+  text-align: center;
+}
+
+#section-title {
+  background-color: #000;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 2.5em;
+}
+
+#section-title-text {
+  font-family: Titillium Web;
+  font-weight: 600;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 2em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+#members {
+  text-align: center;
+}
+
+#memberName {
+  font-family: Titillium Web;
+  font-weight: 700;
+  font-size: 1.6em;
+  line-height: 1em;
+  margin-top: 0.8em;
+  margin-bottom: 0.4em;
+  color: #000;
+}
+
+#memberTitle {
+  font-family: Titillium Web;
+  font-weight: 300;
+  font-size: 1.6em;
+  line-height: 1em;
+  margin-top: 0.8em;
+  margin-bottom: 0.4em;
+  color: #000;
+}
+
+#memberPosition {
+  font-family: Merriweather;
+  font-weight: 300;
+  font-size: 1.2em;
+  line-height: 2.6em;
+  color: #000;
+}
+
+#colBtmMargin {
+  margin-bottom: 2em;
+}
+
+/* images + cards */
+@media only screen and (min-width:992px) {
+  #heroMobile {
+    display: none;
+  }
+
+}
+
+#cardTemplate1 {
+  position: absolute;
+  width: 340px;
+  height: 300px;
+  top: 50px;
+  left: -80px;
+  background-color: #000;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#cardTemplate2 {
+  position: absolute;
+  width: 340px;
+  height: 300px;
+  top: -110px;
+  left: 0px;
+  background-color: #000;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 1;
+}
+
+#cardText {
+  margin: 10px 25px 10px 25px;
+}
+
+#cardTitle {
+  font-family: Titillium Web;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 2em;
+  line-height: 1em;
+  margin-top: 0.8em;
+  margin-bottom: 0.4em;
+  color: #fff;
+}
+
+#cardCopy {
+  font-family: Merriweather;
+  font-size: 1em;
+  line-height: 1.6em;
+  color: #fff;
+}
+
+.imgNoMove {
+  pointer-events: none;
+}
+
+/* to-do: mobile (<992px width) */
+@media only screen and (max-width:992px) {
+  #intro {
+    font-size: 2.2em;
+  }
+
+  #divider {
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+
+  .imgHideMobile {
+    display: none;
+  }
+
+  #cardTemplate1, #cardTemplate2 {
+    position: relative;
+    background-color: #fff;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: auto;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  #cardCopy, #cardTitle {
+    color: #000;
+  }
+
+  #rowDivider {
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+  }
+
+  #heroDivider {
+    display: none;
+  }
+
+  #heroMobile {
+    display: initial;
+    padding-left: 0px;
+  }
+
+  #hero1, #hero2 {
+    display: none;
+  }
+
+  #social {
+    padding-top: 1em;
+  }
+
+  #apply, #contact {
+    padding: 0.6em 0.8em 0.6em 0.8em;
+  }
+
+}
+
+@media only screen and\ (max-width:425px) {
+  #intro {
+    font-size: 1.7em;
+  }
+
+  #textCenter {
+    text-align: center;
+    padding-top: 2em;
+  }
+
+}
+
+.site-logo {
+  width: 200px;
+  margin-top: 1em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav-tabs {
+  font-family: Titillium Web !important;
+  font-weight: 300;
+  font-size: 1.5em !important;
+  border-bottom: none !important;
+  margin-top: 0.5em;
+  text-align: center !important;
+}
+
+.nav-tabs > li {
+  float: none !important;
+  display: inline-block !important;
+  zoom: 1 !important;
+}
+
+.nav-tabs > li > a:focus, .nav-tabs:active {
+  outline: none !important;
+}
+
+.nav-tabs > li > a {
+  border-radius: 0px !important;
+  color: #1D2858 !important;
+  border-bottom: none !important;
+}
+
+.nav-tabs > li.active > a {
+  font-weight: 600;
+  color: #fff !important;
+  background: #000 !important;
+}
+
+/* Navbar */
+.navbar-inverse {
+  background-image: none !important;
+  background-color: transparent !important;
+  border: none !important;
+  margin-left: -16px !important;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form !important {
+  border: none !important;
+}
+
+.navbar-brand {
+  font-family: Titillium Web !important;
+  font-weight: 600;
+  font-size: 2em !important;
+  color: #000 !important;
+}
+
+.navbar-nav > li > a {
+  font-family: Titillium Web !important;
+  font-weight: 300;
+  font-size: 1.6em !important;
+}
+
+.navbar-nav > li > a:hover {
+  color: #000 !important;
+}
+
+#nav-list {
+  margin-left: 1em !important;
+}
+
+/* react-layout-components required styles */
+.react-layout-components--box {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+[data-reactroot] {
+  position: absolute;
+  width: 100% !important;
+  height: 100% !important;
+}
